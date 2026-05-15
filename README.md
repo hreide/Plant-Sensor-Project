@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" width="100%" alt="ESP32 Environmental Sensor System Banner">
+  <img src="docs/banner.jpg" width="100%" alt="ESP32 Environmental Sensor System Banner">
 </p>
 # ESP32 Environmental Sensor System
 
