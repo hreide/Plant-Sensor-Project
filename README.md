@@ -2,20 +2,19 @@
 
 \------------------------------------------------------------------------
 
+A compact embedded sensing system, built around an affordable and expandable ESP32 board to monitor local plant/environment conditions: soil moisture, ambient light, temperature, humidity, and pressure. 
+
+\------------------------------------------------------------------------
+
 ##### Quick Start
 
-git clone https://github.com/hreide/sensor-node
-
+git clone https://github.com/hreide/Plant-Sensor-Project
 cd sensor-node
 
 pip install -r requirements.txt
-
-python logger/logger.py --port /dev/ttyUSB0 --baud 115200 -out data.csv
-
-
+python python/logger.py --port /dev/ttyUSB0 --baud 115200
 
 cd firmware
-
 idf.py flash
 
 \------------------------------------------------------------------------
@@ -32,23 +31,19 @@ Capacitive Moisture Sensor	Soil Moisture (ADC)
 
 ###### Repo Structure
 
-/firmware	ESP-32S firmware
+/firmware	    ESP-32S firmware
 
-/logger		Python CSV Logger
+/python		    Python CSV Logger
 
-/hardware	Schematics, PCB, diagrams, photos
+/hardware	    Schematics, PCB, diagrams, photos
 
-/docs		Block Diagrams, notes, etc
+/docs		      Block diagrams, notes, etc
 
 \------------------------------------------------------------------------
 
-###### Description
+###### Future of the Project
 
-A compact embedded sensing system, built around an affordable and expandable ESP32 board to monitor local plant/environment conditions: soil moisture, ambient light, temperature, humidity, and pressure. 
-
-
-
-The project will move from prototype to data logging and analysis for integration with another simple home automation project.
+The project will move from prototype to data logging and analysis for integration with my other home-automation project.
 
 The project utilizes simple sensing within an embedded firmware structure, serial data logging, and a python workflow for collecting  measurements.
 
