@@ -26,8 +26,7 @@
 static constexpr int I2C_SDA_PIN = 21;
 static constexpr int I2C_SCL_PIN = 22;
 
-// Use an ADC-capable GPIO pin for the soil moisture sensor.
-// Update this pin to match your wiring.
+// We use an ADC-capable GPIO pin (34) for the soil moisture sensor.
 static constexpr int SOIL_ADC_PIN = 34;
 
 static constexpr uint32_t SERIAL_BAUD = 115200;
